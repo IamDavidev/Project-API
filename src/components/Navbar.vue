@@ -13,18 +13,15 @@
           <router-link to="/login">Login</router-link>
         </li>
       </ul>
-      <button class="btn__menu">
-        M-mobile
-      </button>
     </nav>
   </div>
 </template>
 
 <script>
-export default {};
+
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .menu {
   background: #ff0f0f00;
   height: 75px;
@@ -60,7 +57,7 @@ export default {};
       }
     }
   }
-  ul.resposive {
+  ul  {
     top: 65px;
   }
   .btn__menu {
@@ -70,63 +67,6 @@ export default {};
     font-size: 25px;
     cursor: pointer;
     display: none;
-  }
-}
-@media screen and(max-width:952px) {
-  .menu {
-    .marca {
-      font-size: 30px;
-      padding-left: 35px;
-    }
-    li a {
-      font-size: 16px;
-    }
-  }
-}
-@media screen and(max-width:858px) {
-  .menu {
-    height: 65px;
-    .btn__menu {
-      display: inline-flex;
-    }
-    .menu__items {
-      position: fixed;
-      width: 100vw;
-      height: calc(100% - 65px);
-      background: #414141;
-      top: -100vh;
-      text-align: center;
-      transition: all 0.5s;
-      flex-direction: column;
-      li {
-        margin: 30px 0 0;
-        line-height: 30px;
-      }
-      &:hover {
-        background: none;
-      }
-      a {
-        font-size: 20px;
-        color: #fff;
-        font-weight: bold;
-        &:hover {
-          color: #191919;
-        }
-      }
-    }
-    .marca {
-      font-size: 25px;
-      padding-left: 35px;
-    }
-  }
-}
-@media screen and(max-width:858px) and (orientation: landscape) {
-  .menu__items {
-    li {
-      margin: 5px 0 0;
-    }
-    overflow: scroll;
-    height: calc(100% - 65px);
   }
 }
 </style>
